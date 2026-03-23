@@ -24,14 +24,12 @@ I trained and compared 8 models. Here are the results on the held-out test set:
 |---------------------|----------|-----------|--------|--------|---------|
 | Logistic Regression | 0.8091   | 0.6733    | 0.5455 | 0.6027 | 0.8466  |
 | AdaBoost            | 0.7999   | 0.6513    | 0.5294 | 0.5841 | 0.8447  |
-| Gradient Boosting   | 0.7942   | 0.6469    | 0.4947 | 0.5606 | 0.8380  |
-| Naive Bayes         | 0.7388   | 0.5053    | 0.7594 | 0.6068 | 0.8254  |
 | Random Forest       | 0.7842   | 0.6167    | 0.4947 | 0.5490 | 0.8190  |
 | Decision Tree       | 0.7913   | 0.6266    | 0.5294 | 0.5739 | 0.8329  |
 | KNN                 | 0.7544   | 0.5417    | 0.4866 | 0.5127 | 0.7928  |
 | SVM                 | 0.7921   | 0.6421    | 0.4893 | 0.5554 | 0.7876  |
 
-Logistic Regression came out on top with an AUC of 0.8466 and the most consistent cross-validation scores across 5 folds (mean 0.8488, std 0.012). Interestingly the more complex models like Random Forest and Gradient Boosting didn't do better — probably because the feature engineering created clean enough signals that a linear model could pick up directly.
+Logistic Regression came out on top with an AUC of 0.8466 and the most consistent cross-validation scores across 5 folds (mean 0.8488, std 0.012). Interestingly the more complex models like Random Forest didn't do better — probably because the feature engineering created clean enough signals that a linear model could pick up directly.
 
 ---
 
