@@ -14,9 +14,9 @@ class DataIngestionConfig:
     Holds file paths for all artifacts produced by data ingestion.
     Using a dataclass keeps configuration separate from logic.
     """
-    raw_data_path   : str = os.path.join("artifacts", "raw.csv")
+    raw_data_path : str = os.path.join("artifacts", "raw.csv")
     train_data_path : str = os.path.join("artifacts", "train.csv")
-    test_data_path  : str = os.path.join("artifacts", "test.csv")
+    test_data_path : str = os.path.join("artifacts", "test.csv")
 
 
 class DataIngestion:
