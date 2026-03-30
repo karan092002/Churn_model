@@ -3,4 +3,6 @@ numpy
 scikit-learn
 matplotlib
 seaborn
+joblib
+imbalanced-learn
 -e .
