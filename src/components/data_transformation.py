@@ -5,7 +5,7 @@ import pandas as pd
 from dataclasses import dataclass
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.preprocessing import StandardScaler, OrdinalEncoder
 from sklearn.compose import ColumnTransformer
 
 from src.exception import CustomException
@@ -75,7 +75,10 @@ class DataTransformation:
 
         categorical_pipeline = Pipeline([
             ("imputer", SimpleImputer(strategy="most_frequent")),
-            ("encoder", LabelEncoder()),
+            ("encoder", OrdinalEncoder(
+                handle_unknown="use_encoded_value",
+                unknown_value=-1
+            ))
         ])
 
         preprocessor = ColumnTransformer(transformers=[

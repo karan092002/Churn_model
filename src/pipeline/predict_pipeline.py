@@ -20,8 +20,6 @@ class PredictPipeline:
     Loads the saved preprocessor and model from artifacts,
     applies the same feature engineering and transformation that was
     done during training, and returns a churn probability for each input row.
-
-    This is the class that app.py calls — it knows nothing about training.
     """
 
     def __init__(self):
