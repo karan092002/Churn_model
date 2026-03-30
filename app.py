@@ -10,7 +10,7 @@ from src.pipeline.predict_pipeline import PredictPipeline, CustomerData
 from src.exception import CustomException
 
 st.set_page_config(page_title="Churn Predictor", layout="centered")
-st.title("Telco Customer Churn Predictor")
+st.title("Customer Churn Predictor")
 st.write("Fill in the customer details below to get a churn probability.")
 
 # Input form
