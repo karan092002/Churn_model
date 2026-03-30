@@ -20,8 +20,8 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     tenure = st.slider("Tenure (months)", 0, 72, 12)
-    monthly_charges = st.number_input("Monthly Charges ($)", 0.0, 200.0, 65.0)
-    total_charges = st.number_input("Total Charges ($)", 0.0, 10000.0, 800.0)
+    monthly_charges = st.number_input("Monthly Charges ($)", 0.0, 20000.0, 65.0)
+    total_charges = st.number_input("Total Charges ($)", 0.0, 1000000.0, 800.0)
     senior_citizen = st.selectbox("Senior Citizen", ["No", "Yes"])
 
 with col2:
@@ -90,8 +90,8 @@ if st.button("Predict Churn", type="primary"):
         st.header("Result")
 
         col_a, col_b = st.columns(2)
-        col_a.metric("Prediction",        label)
-        col_b.metric("Churn Probability", f"{prob:.1%}")
+        col_a.metric("Prediction", label)
+        col_b.metric("Churn Probability", f"{prob*100:.1%}")
 
         st.progress(float(prob))
 
