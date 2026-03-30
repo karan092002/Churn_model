@@ -2,7 +2,7 @@
 
 A machine learning project that predicts whether a telecom customer is likely to churn. The goal was to build a complete pipeline from raw data to a deployed app, not just train a model in a notebook.
 
-Live demo: https://your-app.streamlit.app
+Live demo: https://churnmodel-m.streamlit.app/
 
 ---
 
