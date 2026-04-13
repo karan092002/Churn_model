@@ -109,7 +109,7 @@ if st.button("Predict Churn", type="primary"):
         st.header("Result")
 
         col_a, col_b = st.columns(2)
-        col_a.metric("Prediction",        label)
+        col_a.metric("Prediction", label)
         col_b.metric("Churn Probability", f"{prob:.1%}")
 
         st.progress(float(prob))
