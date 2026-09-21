@@ -81,9 +81,9 @@ ROC-AUC was chosen as the primary metric because the dataset has a 73/27 class s
 ## Dashboard Preview
 The Power BI dashboard file (.pbix) is available for download in the repo for anyone who wants to explore it in Power BI Desktop.
 
-![Executive Summary](dashboard-screenshots/page1.png)
-![Segment Deep Dive](dashboard-screenshots/page2.png)
-![Business Impact](dashboard-screenshots/page3.png)
+![Executive Summary](dashboard_screenshots/page1.png)
+![Segment Deep Dive](dashboard_screenshots/page2.png)
+![Business Impact](dashboard_screenshots/page3.png)
 
 ---
 
